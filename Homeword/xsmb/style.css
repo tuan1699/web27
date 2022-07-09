@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Varela Round', sans-serif;
+}
+
+.container {
+    width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.j-space-between {
+    justify-content: space-between;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.mg-t-b-20 {
+    margin: 20px 0;
+}
+
+.mg-r-2 {
+    margin-right: 2px;
+}
+
+.mg-r-10 {
+    margin-right: 10px;
+}
+
+.mg-r-16 {
+    margin-right: 16px;
+}
+
+.mg-l-20 {
+    margin-left: 20px;
+}
+
+.mg-t-20 {
+    margin-top: 20px;
+}
+
+.mg-t-10 {
+    margin-top: 10px;
+}
+
+.mg-t-60 {
+    margin-top: 60px;
+}
+
+.mg-b-40 {
+    margin-bottom: 40px;
+}
+
+.mg-b-60 {
+    margin-bottom: 60px;
+}
+
+.mg-b-16 {
+    margin-bottom: 16px;
+}
+
+.mg-b-10 {
+    margin-bottom: 10px;
+}
+
+.pd-5 {
+    padding: 5px;
+}
+
+.pd-10 {
+    padding: 5px;
+}
+
+.pd-10-30 {
+    padding: 20px 30px;
+}
+
+.pd-10-20 {
+    padding: 10px 20px;
+}
+
+.pd-20 {
+    padding: 20px;
+}
+
+.pd-b-10 {
+    padding-bottom: 10px;
+}
+
+.font-size-30 {
+    font-size: 30px;
+}
+
+.font-size-20 {
+    font-size: 20px;
+}
+
+.font-size-22 {
+    font-size: 22px;
+}
+
+.font-size-12 {
+    font-size: 12px;
+}
+
+.font-size-10 {
+    font-size: 10px;
+}
+
+.font-size-8 {
+    font-size: 8px;
+}
+
+.font-weight-500 {
+    font-weight: 500;
+}
+
+.font-weight-600 {
+    font-weight: 600;
+}
+
+.font-weight-700 {
+    font-weight: 700;
+}
+
+.font-weight-bold {
+    font-weight: 600;
+}
+
+.bg-header {
+    background-color: rgb(200, 53, 78);
+}
+
+.bg-blue {
+    background-color: #0000FF;
+}
+
+.bg-gray {
+    background-color: gray;
+}
+
+.bg-aliceblue {
+    background-color: #F0F8FF;
+}
+
+.border-none {
+    border: none;
+}
+
+.border-1px-solid {
+    border: 1px solid #ccc;
+}
+
+.border-tb-1px-solid {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.boder-right {
+    border-right: 1px solid #ccc;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #ccc;
+}
+
+.color-blue {
+    color: #0000FF;
+}
+
+.color-gray {
+    color: #696969;
+}
+
+.color-black {
+    color: #000;
+}
+
+.color-red {
+    color: red;
+}
+
+.color-dosam {
+    color: #900;
+}
+
+.color-whrite {
+    color: #fff;
+}
+
+.color-goldenrod {
+    color: #DAA520;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.line-height-14 {
+    line-height: 1.6;
+}
+
+.line-height-36 {
+    line-height: 36px;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.j-center {
+    justify-content: center;
+}
+
+.j-space-between {
+    justify-content: space-between;
+}
+
+.j-end {
+    justify-content: flex-end;
+}
+
+.list-inside {
+    list-style-position: inside;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.reset-link {
+    text-decoration: none;
+}
+
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.row>* {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.col-1 {
+    width: 8.333333%;
+
+}
+
+.col-2 {
+    width: 16.666667%;
+
+}
+
+.col-3 {
+    width: 25%;
+
+}
+
+.col-4 {
+    width: 33.333333%;
+}
+
+.col-5 {
+    width: 41.5%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.333333%;
+}
+
+.col-8 {
+    width: 66.666667%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.333333%;
+}
+
+.col-11 {
+    width: 91.666667%
+}
+
+.col-12 {
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    border: 5px solid #ccc;
+    border-collapse: collapse;
+}
+
+tr,
+td {
+    border: 1px solid #ccc;
+    text-align: center;
+}

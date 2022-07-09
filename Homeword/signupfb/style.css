@@ -1,0 +1,394 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Varela Round', sans-serif;
+}
+
+.container {
+    width: 432px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.mg-t-b-20 {
+    margin: 20px 0;
+}
+
+.mg-r-5 {
+    margin-right: 5px;
+}
+
+.mg-r-10 {
+    margin-right: 10px;
+}
+
+.mg-r-16 {
+    margin-right: 16px;
+}
+
+.mg-l-20 {
+    margin-left: 20px;
+}
+
+.mg-t-20 {
+    margin-top: 20px;
+}
+
+.mg-t-10 {
+    margin-top: 10px;
+}
+
+.mg-t-60 {
+    margin-top: 60px;
+}
+
+.mg-b-40 {
+    margin-bottom: 40px;
+}
+
+.mg-b-60 {
+    margin-bottom: 60px;
+}
+
+.mg-b-16 {
+    margin-bottom: 16px;
+}
+
+.mg-b-10 {
+    margin-bottom: 10px;
+}
+
+.mg-b-2 {
+    margin-bottom: 2px;
+}
+
+.pd-5 {
+    padding: 5px;
+}
+
+.pd-10 {
+    padding: 10px;
+}
+
+.pd-20-0 {
+    padding: 20px 0;
+}
+
+.pd-10-20 {
+    padding: 10px 20px;
+}
+
+.pd-20 {
+    padding: 20px;
+}
+
+.pd-b-16 {
+    padding-bottom: 16px;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.font-size-20 {
+    font-size: 20px;
+}
+
+.font-size-15 {
+    font-size: 15px;
+}
+
+.font-size-11 {
+    font-size: 11px;
+}
+
+.font-size-12 {
+    font-size: 12px;
+}
+
+.font-size-10 {
+    font-size: 10px;
+}
+
+.font-size-8 {
+    font-size: 8px;
+}
+
+.font-weight-500 {
+    font-weight: 500;
+}
+
+.font-weight-600 {
+    font-weight: 600;
+}
+
+.font-weight-700 {
+    font-weight: 700;
+}
+
+.font-weight-bold {
+    font-weight: 600;
+}
+
+.font-varela {
+    font-family: 'Varela Round', sans-serif;
+}
+
+.bg-black {
+    background-color: black;
+}
+
+.bg-blue {
+    background-color: #0000FF;
+}
+
+.bg-gray {
+    background-color: gray;
+}
+
+.bg-gray2 {
+    background-color: #f5f6f7;
+}
+
+.bg-aliceblue {
+    background-color: #F0F8FF;
+}
+
+.border-radius-5 {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.border-none {
+    border: none;
+}
+
+.border-1px-solid {
+    border: 1px solid #ccc;
+}
+
+.border-tb-1px-solid {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.boder-right {
+    border-right: 1px solid;
+}
+
+.border-bottom {
+    border-bottom: 1px solid;
+}
+
+.color-blue {
+    color: #0000FF;
+}
+
+.color-gray {
+    color: #696969;
+}
+
+.color-gray2 {
+    color: #606770;
+}
+
+.color-black {
+    color: #000;
+}
+
+.color-cyan {
+    color: #00BFFF;
+}
+
+.color-red {
+    color: red;
+}
+
+.color-whrite {
+    color: #fff;
+}
+
+.color-777 {
+    color: #777;
+}
+
+.color-link {
+    color: #385898;
+}
+
+.color-goldenrod {
+    color: #DAA520;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.line-height-14 {
+    line-height: 1.6;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.j-center {
+    justify-content: center;
+}
+
+.j-space-between {
+    justify-content: space-between;
+}
+
+.j-end {
+    justify-content: flex-end;
+}
+
+.list-inside {
+    list-style-position: inside;
+}
+
+.text-center {
+    text-align: center;
+}
+
+textarea {
+    resize: none;
+}
+
+.reset-link {
+    text-decoration: none;
+}
+
+.reset-list {
+    list-style-type: none;
+}
+
+.reset-button {
+    border: none;
+    border-radius: 5px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.row>* {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.col-1 {
+    width: 8.333333%;
+
+}
+
+.col-2 {
+    width: 16.666667%;
+
+}
+
+.col-3 {
+    width: 25%;
+
+}
+
+.col-4 {
+    width: 33.333333%;
+}
+
+.col-5 {
+    width: 41.5%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.333333%;
+}
+
+.col-8 {
+    width: 66.666667%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.333333%;
+}
+
+.col-11 {
+    width: 91.666667%
+}
+
+.col-12 {
+    width: 100%;
+}
+
+input,
+select {
+    width: 100%;
+}
+
+.gender input {
+    width: auto;
+    position: absolute;
+    right: 10px;
+    top: 8px;
+}
+
+.gender label {
+    width: 100%;
+}
+
+.header-close {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    font-size: 24px;
+}
+
+.signup-form {
+    padding: 16px;
+    border: 1px solid #ccc;
+}
+
+.button {
+    text-align: center;
+}
+
+button {
+    width: 194px;
+    padding: 8px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #0db210;
+    color: #fff;
+}

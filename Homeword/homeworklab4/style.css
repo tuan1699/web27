@@ -1,0 +1,591 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .reset-link {
+        text-decoration: none;
+    }
+
+    .bg-xamsam {
+        background: rgba(0, 0, 0, .25) !important
+    }
+
+    .color-white {
+        color: #fff;
+    }
+
+    .color-333333 {
+        color: #333333;
+    }
+
+
+    .font-size-40 {
+        font-size: 40px;
+    }
+
+    .font-size-20 {
+        font-size: 20px;
+    }
+
+    .font-size-16 {
+        font-size: 16px;
+    }
+
+    .font-size-14 {
+        font-size: 14px;
+    }
+
+    .font-size-12 {
+        font-size: 12px;
+    }
+
+    .mt-8 {
+        margin-top: 8px;
+    }
+
+    .mb-4 {
+        margin-bottom: 4px;
+    }
+
+    .mt-80 {
+        margin-top: 80px;
+    }
+
+    .mb-20 {
+        margin-bottom: 20px;
+    }
+
+    .ml-8 {
+        margin-left: 8px;
+    }
+
+    .mr-12 {
+        margin-right: 12px;
+    }
+
+    .text-color-33 {
+        color: #333333;
+    }
+
+    .d-flex {
+        display: flex;
+    }
+
+    .flex-column {
+        flex-direction: column;
+    }
+
+    .j-center {
+        justify-content: center;
+    }
+
+    .j-space-between {
+        justify-content: space-between;
+    }
+
+    .j-start {
+        justify-content: flex-start;
+    }
+
+    .j-end {
+        justify-content: flex-end;
+    }
+
+    .text-align-center {
+        align-items: center;
+    }
+
+    .flex-wrap {
+        flex-wrap: wrap;
+    }
+
+    .gap {
+        gap: 10px;
+    }
+
+    .container {
+        width: 1320px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .col-4 {
+        display: flex;
+        width: 322.5px;
+
+    }
+
+    .col-6 {
+        display: flex;
+        width: 211.6666px;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+
+    .row>* {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .col-1 {
+        width: 8.333333%;
+
+    }
+
+    .col-2 {
+        width: 16.666667%;
+
+    }
+
+    .col-3 {
+        width: 25%;
+
+    }
+
+    .col-4-1 {
+        width: 33.333333%;
+    }
+
+    .col-5 {
+        width: 41.5%;
+    }
+
+    .col-6-1 {
+        width: 50%;
+    }
+
+    .col-7 {
+        width: 58.333333%;
+    }
+
+    .col-8 {
+        width: 66.666667%;
+    }
+
+    .col-9 {
+        width: 75%;
+    }
+
+    .col-10 {
+        width: 83.333333%;
+    }
+
+    .col-11 {
+        width: 91.666667%
+    }
+
+    .col-12 {
+        width: 100%;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .header {
+        border-bottom: 1px solid #ccc;
+        background-color: #fff;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+
+    .header-logo {
+        width: 155.65px;
+    }
+
+    img {
+        vertical-align: middle;
+    }
+
+    .nav-menu {
+        margin-left: -140px;
+        align-self: flex-end;
+    }
+
+    .nav-menu li {
+        list-style-type: none;
+        margin-right: 10px;
+        padding-bottom: 10px;
+    }
+
+    .nav-menu li:hover {
+        border: 1px solid #ccc;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-bottom: none;
+    }
+
+    .nav-menu li:hover .nav-items-link {
+        border: none;
+    }
+
+    .nav-items-link {
+        display: block;
+        color: #333333;
+        font-size: 14px;
+        text-decoration: none;
+        padding: 6px 15px;
+        border: 1px solid #ccc;
+        border-radius: 15px;
+        /* line-height: 60px; */
+    }
+
+    .nav-wrapper {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background-color: #eee;
+    }
+
+    .nav-search {
+        position: relative;
+        width: 320px;
+        margin-left: -120px;
+    }
+
+    .nav-search input {
+        width: 100%;
+        line-height: 30px;
+        border-radius: 20px;
+        padding: 0 10px;
+        border: 1px solid #ccc;
+    }
+
+    .nav-search-icon {
+        position: absolute;
+        right: 10px;
+        bottom: 5px;
+        color: rgba(0, 0, 0, .5);
+    }
+
+    .nav-feature-icon {
+        text-align: center;
+    }
+
+    .sub-menu {
+        display: none;
+        top: 100%;
+        right: 0;
+        left: 0;
+        background-color: white;
+        border: 1px solid #ccc;
+        padding: 10px 0px;
+    }
+
+    .sub-item {
+        height: 86px;
+        overflow: hidden;
+    }
+
+    .sub-item:hover .sub-thumbnail {
+        transform: scale(1.3);
+        transition: .5s ease;
+        opacity: 0.8;
+    }
+
+    .sub-item:hover .item-title {
+        color: red;
+    }
+
+    .nav-items:hover .sub-menu {
+        display: block;
+    }
+
+    .item-title {
+        right: 0;
+        bottom: 0;
+        left: 0;
+        color: white;
+        padding: 5px;
+        background-image: linear-gradient(transparent,
+                rgba(0, 0, 0, 0.1),
+                rgba(0, 0, 0, 0.3),
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.7),
+                rgba(0, 0, 0, 0.9));
+    }
+
+    .position-fixed {
+        position: fixed;
+
+    }
+
+    .position-relative {
+        position: relative;
+    }
+
+    .position-absolute {
+        position: absolute;
+    }
+
+    .manga-name,
+    .anime-info {
+        color: #EEEEEE;
+        bottom: 0;
+        padding: 10px;
+        width: 100%;
+        background-image: linear-gradient(transparent, rgba(0, 0, 0, .1), rgba(0, 0, 0, .3), rgba(0, 0, 0, .5), rgba(0, 0, 0, .7), rgba(0, 0, 0, .9));
+    }
+
+    .manga-chapter {
+        border: 1px solid;
+        background-color: rgba(0, 0, 0, .5);
+        color: #fff;
+        font-size: 13px;
+        padding: 0px 4px;
+        border-radius: 3px;
+        top: 10px;
+        left: 10px;
+    }
+
+    .top-10 {
+        top: 10px;
+    }
+
+    .left-10 {
+        left: 10px;
+    }
+
+    .bottom-5 {
+        bottom: 5px;
+    }
+
+    .right-5 {
+        right: 5px;
+    }
+
+    .anime-chapter {
+        font-size: 12px;
+    }
+
+    .slider-big {
+        display: flex;
+        width: 987.5px;
+    }
+
+    .slide-item:hover .slide-item-thumbnail {
+        opacity: 0.8;
+        transition: opacity 0.3s ease;
+    }
+
+    .play-wrap {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        padding-left: 10px;
+        padding-bottom: 10px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: linear-gradient(transparent,
+                rgba(0, 0, 0, 0.1),
+                rgba(0, 0, 0, 0.3),
+                rgba(0, 0, 0, 0.4),
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.6));
+    }
+
+    .play {
+        display: flex;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0, .6);
+        align-items: center;
+        justify-content: center;
+    }
+
+    .play-title {
+        color: white;
+    }
+
+    .play-icon {
+        font-size: 50px;
+        color: white;
+    }
+
+    .section-slider img {
+        width: 100%;
+    }
+
+
+
+    .section-news img {
+        width: 50%;
+    }
+
+    .news-item:hover .news-thumbnail {
+        opacity: 0.8;
+        transition: opacity 0.3s ease;
+    }
+
+    .anime-item {
+        overflow: hidden;
+        border-top-right-radius: 45px;
+        border-top-left-radius: 45px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .anime-item:hover .anime-item-thumbnail {
+        transform: scale(1.3);
+        transition: .5s ease;
+        opacity: 0.8;
+    }
+
+    .manga-item img,
+    .manga-name {
+        border-radius: 10px;
+    }
+
+    .manga-item:hover .manga-thumbnail {
+        opacity: 0.8;
+        transition: opacity 0.3s ease;
+    }
+
+    .section-title {
+        font-size: 25px;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: #333333;
+        margin: 36px 0 12px 0;
+    }
+
+    .thumbnail {
+        padding: 0;
+        margin: 0;
+    }
+
+
+    .button-play {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background-color: rgba(5, 95, 60, .6);
+        color: #EEEEEE;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        text-align: center;
+    }
+
+    .section-new-chapter .play {
+        display: none;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        box-shadow: 0 0 10px #fff;
+    }
+
+    .chapter-items:hover .play {
+        display: flex;
+    }
+
+    .chapter-items:hover .thumbnail {
+        transform: scale(1.3);
+        transition: .5s ease;
+    }
+
+    .chapter-items:hover .button-play {
+        display: none;
+    }
+
+    .section-all .play,
+    .section-pick .play {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        box-shadow: 0 0 10px #fff;
+    }
+
+    .anime-feature,
+    .pick-feature {
+        display: none;
+    }
+
+    .chapter-items,
+    .all-item,
+    .pick-item {
+        overflow: hidden;
+    }
+
+    .rank-item {
+        background: linear-gradient(-180deg, rgba(244, 67, 54, .9), rgba(244, 67, 54, .2));
+    }
+
+    .pick-item:hover .pick-feature {
+        display: block;
+    }
+
+    .pick-item:hover .pick-thumbnail {
+        transform: scale(1.3);
+        transition: .5s ease;
+    }
+
+    .time {
+        position: absolute;
+        top: 20px;
+        right: 10px;
+        width: 220px;
+        padding: 4px 10px;
+        background-color: rgba(0, 0, 0, .4);
+        font-size: 14px;
+        color: #fff;
+    }
+
+    .upcoming {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background-color: rgba(216, 15, 22, .6);
+        color: #EEEEEE;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        text-align: center;
+    }
+
+    .text-upcoming,
+    .text-button {
+        font-size: 14px;
+        font-weight: bolder;
+        margin-top: 18px;
+        text-transform: uppercase;
+    }
+
+
+    .all-item:hover .upcoming {
+        display: none;
+    }
+
+    .all-item:hover .anime-feature {
+        display: block;
+    }
+
+    .all-item:hover .anime-thumbnail {
+        transform: scale(1.3);
+        transition: .5s ease;
+    }
+
+    .see-more a {
+        padding: 6px 12px;
+        background-color: red;
+        color: #fff;
+    }

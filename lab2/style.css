@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.mt-50 {
+    margin-top: 50PX;
+}
+
+.mg-20 {
+    margin: 20px 0px;
+}
+
+.mb-16 {
+    margin-bottom: 16px;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.clear {
+    clear: both;
+}
+
+.col-third {
+    width: 33.3333%;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.reset-link {
+    text-decoration: none;
+}
+
+.text-navi {
+    color: #000080;
+}
+
+.text-brown {
+    color: #a52a2a;
+}
+
+.text-link {
+    color: rgb(98, 14, 200);
+}
+
+.text-italic {
+    font-style: italic;
+}
+
+.text-whrite {
+    color: #fff;
+}
+
+.text-green {
+    color: green;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.decoration-none {
+    text-decoration: none;
+}
+
+.text-deco-overline {
+    text-decoration-line: overline;
+}
+
+.text-deco-throughline-green {
+    text-decoration-line: line-through;
+    text-decoration-color: green;
+}
+
+.text-deco-underline {
+    text-decoration-line: underline;
+}
+
+.text-deco-none {
+    text-decoration-line: none;
+}
+
+.letter-spacing-10px {
+    letter-spacing: 10px;
+}
+
+.list-inside {
+    list-style-position: inside;
+}
+
+.font-s {
+    font-size: 10px;
+}
+
+.font-m {
+    font-size: 20px;
+}
+
+.font-l {
+    font-size: 30px;
+}
+
+.font-xl {
+    font-size: 50px;
+}
+
+.font-segoe {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.font-google {
+    font-family: "Sofia", sans-serif;
+}
+
+.height-line-50 {
+    line-height: 50px;
+}
+
+#header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    height: 50px;
+    background-color: #c9bd0d;
+}
+
+#slider {
+    position: relative;
+    height: 500px;
+    background-image: url(http://hanoitoserco.com.vn/uploaded/tour/mien-bac/ha-giang.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#content {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#nav li {
+    float: left;
+    list-style-type: none;
+    width: 33.3333%;
+    text-align: center;
+}
+
+#nav li a {
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    line-height: 50px;
+}
+
+#nav li:hover a {
+    background-color: #ccc;
+    color: #000;
+}
+
+.slider-text {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+}

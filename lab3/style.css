@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product-list {}
+
+.product-235 {
+    float: left;
+    width: 235px;
+}
+
+.product-150 {
+    float: left;
+    width: 150px;
+}
+
+img {
+    width: 100%;
+}
+
+.mr-20 {
+    margin-right: 20px;
+}
+
+.mt-50 {
+    margin-top: 50PX;
+}
+
+
+.mg-20 {
+    margin: 20px 0px;
+}
+
+.mb-16 {
+    margin-bottom: 16px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mt-16 {
+    margin-top: 16px;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.clear {
+    clear: both;
+}
+
+.col-third {
+    width: 33.3333%;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.reset-link {
+    text-decoration: none;
+}
+
+.text-navi {
+    color: #000080;
+}
+
+.text-brown {
+    color: #a52a2a;
+}
+
+.text-link {
+    color: rgb(98, 14, 200);
+}
+
+.text-italic {
+    font-style: italic;
+}
+
+.text-whrite {
+    color: #fff;
+}
+
+.text-green {
+    color: green;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.decoration-none {
+    text-decoration: none;
+}
+
+.text-deco-overline {
+    text-decoration-line: overline;
+}
+
+.text-deco-throughline-green {
+    text-decoration-line: line-through;
+    text-decoration-color: green;
+}
+
+.text-deco-underline {
+    text-decoration-line: underline;
+}
+
+.text-deco-none {
+    text-decoration-line: none;
+}
+
+.letter-spacing-10px {
+    letter-spacing: 10px;
+}
+
+.list-inside {
+    list-style-position: inside;
+}
+
+.font-s {
+    font-size: 10px;
+}
+
+.font-m {
+    font-size: 20px;
+}
+
+.font-l {
+    font-size: 30px;
+}
+
+.font-xl {
+    font-size: 50px;
+}
+
+.font-segoe {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.font-google {
+    font-family: "Sofia", sans-serif;
+}
+
+.height-line-50 {
+    line-height: 50px;
+}
+
+
+
+/* ................................. */
+.square-l {
+    width: 500px;
+    height: 500px;
+}
+
+.square-m {
+    width: 300px;
+    height: 300px;
+}
+
+.square-s {
+    width: 200px;
+    height: 200px;
+}
+
+.border-green {
+    border-color: greenyellow;
+}
+
+.border-brown {
+    border-color: brown;
+}
+
+.border-yellow {
+    border-color: yellow;
+}
+
+.border-blue {
+    border-color: blue;
+}
+
+.bg-red {
+    background-color: rgb(255, 183, 0);
+}
+
+.bg-green {
+    background-color: rgb(79, 38, 194);
+}
+
+.bg-blue {
+    background-color: rgb(255, 0, 212);
+}
+
+.border-solid {
+    border: solid;
+}
+
+.border-dashed {
+    border: dashed;
+}
+
+.border-dotted {
+    border: dotted;
+}
+
+.border-thin {
+    border-width: 3px;
+}
+
+.border-medium {
+    border-width: 6px;
+}
+
+.border-thick {
+    border-width: 12px;
+}
+
+.over-flow-auto {
+    overflow: auto;
+}
