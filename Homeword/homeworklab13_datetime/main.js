@@ -73,6 +73,51 @@ function getLastDayOfMonth(year, month) {
 console.log(getLastDayOfMonth(2012, 0));
 console.log(getLastDayOfMonth(2022, 1));
 
+// Bài 6
+console.warn("Bai 6");
+
+// Khởi tạo biến thời gian hiện tại now
+// Khởi tạo biến nhận thời gian sinh nhật birthday
+// Nếu now.getTime > birthday.getTime => Đã qua sinh nhật => Sinh nhật tiếp theo vào năm sau => birthday.getFullYear +=1
+
+function getDaysToNextBirthday(date, month) {
+  var now, diff, days, birthDay;
+  now = new Date();
+  birthDay = new Date(now.getFullYear(), month - 1, date);
+
+  if (now.getTime() > birthDay.getTime()) {
+    birthDay.setFullYear(birthDay.getFullYear() + 1);
+  }
+
+  diff = birthDay.getTime() - now.getTime();
+  days = Math.floor(diff / (1000 * 60 * 60 * 24));
+
+  return days;
+}
+
+console.log(getDaysToNextBirthday(17, 8));
+
 // Bài 7
+console.warn("Bai 7");
 
+function humanize(date) {
+  const now = new Date();
+  const diff = (now.getTime() - date.getTime()) / 1000;
 
+  if (diff < 5) return "Vừa xong";
+  else if (diff < 60) return `${Math.floor(diff)} giây trước`;
+  else if (diff < 3600) return `${Math.floor(diff / 60)} phút trước`;
+  else if (diff < 86400) return `${Math.floor(diff / 3600)} giờ trước`;
+  else if (diff < 2592000) return `${Math.floor(diff / 86400)} ngày trước`;
+  else if (diff < 946080000) return `${Math.floor(diff / 2592000)} tháng trước`;
+  else return "Ngày xửa ngày xưa";
+}
+
+const now = new Date();
+console.log(humanize(now));
+
+now.setSeconds(now.getSeconds() - 10);
+console.log(humanize(now));
+
+now.setHours(now.getHours() - 3);
+console.log(humanize(now));
