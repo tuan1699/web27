@@ -233,19 +233,37 @@ const scores = {
   Z: 23,
 };
 
-const obj = { a: 1, b: 2, c: 3 };
-
-function invert(object) {
-  let copy = {};
-
-  for (let key in object) {
-    copy.key = object[key];
-    copy[key] = object.key;
-    return copy;
+function calcNameScore(name) {
+  let score = 0;
+  for (let char of name) {
+    char = char.toUpperCase();
+    point = scores[char];
+    score += point;
   }
+
+  if (score <= 60) return "NOT TOO GOOD";
+  else if (61 <= score && score <= 300) return "PRETTY GOOD";
+  else if (301 <= score && score <= 600) return "VERY GOOD";
+  else return "THE BEST";
 }
 
-console.log(invert(obj));
+console.log(calcNameScore("Dang"));
+
+console.warn("2.4");
+
+function invert(obj) {
+  const result = {};
+
+  for (let key in obj) {
+    result[obj[key]] = key;
+  }
+  return result;
+}
+
+const test = { 1: "Tuan", 2: "Dang", 3: "Van" };
+console.log(test);
+
+console.log(invert({ a: 1, b: 2, c: 3 }));
 
 console.warn("2.5");
 
