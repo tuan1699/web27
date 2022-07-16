@@ -286,15 +286,12 @@ function fibonacci(n) {
     n2 = 1,
     nextNumber;
   for (i = 1; i <= n; i++) {
-    
-
     console.log(n1);
     nextNumber = n1 + n2;
     n1 = n2;
     n2 = nextNumber;
   }
 }
-
 
 console.warn("dãy 1");
 fibonacci(4); // 0 1 1 2
@@ -372,3 +369,47 @@ console.log(sumOfPalindrome(22)); // 11 + 22 = 33
 console.log(sumOfPalindrome(55));
 console.log(sumOfPalindrome(125));
 console.log(sumOfPalindrome(1000));
+
+function getRandNumbers(min, max, length) {
+  let arr = [];
+  for (i = 0; i < length; i++) {
+    arr.push(Math.floor(Math.random() * (max - min) + min));
+  }
+  return arr;
+}
+
+console.log(getRandNumbers(1, 10, 10));
+
+// function getTotal(arr) {
+//   let sum = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     sum += arr[i];
+//   }
+//   console.log(sum);
+// }
+
+// getTotal([1, 2, 3]);
+var orders = [
+  {
+    name: "Khóa học HTML - CSS Pro",
+    price: 3000000,
+  },
+  {
+    name: "Khóa học Javascript Pro",
+    price: 2500000,
+  },
+  {
+    name: "Khóa học React Pro",
+    price: 3200000,
+  },
+];
+
+function getTotal(arr) {
+  let sum = 0;
+  for (i = 0; i < arr.length; i++) {
+    sum += arr[i].price;
+  }
+  console.log(sum);
+}
+
+getTotal(orders);

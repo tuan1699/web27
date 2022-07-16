@@ -178,3 +178,33 @@ ba.attack(beo);
 console.log(beo);
 beo.attack(ba);
 console.log(ba);
+
+// let date = new Date();
+
+// date.setFullYear(2023);
+// console.log(date.getFullYear());
+
+let date = new Date();
+
+function getNextYear() {
+  date.setFullYear(date.getFullYear() + 1);
+  console.log(date.getFullYear());
+}
+
+getNextYear();
+// function getNextYear() {
+//   let year;
+//   year = date.setFullYear(date.getFullYear() + 1);
+//   console.log(year);
+// }
+
+// getNextYear();
+
+let arr = [1,2,3,4,5,6,7];
+
+function getRandomItem(n) {
+    let random = Math.floor(Math.random()* 6);
+
+console.log(n[random]);
+}
+getRandomItem(arr)

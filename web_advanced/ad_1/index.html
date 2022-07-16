@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Basic</title>
+  </head>
+  <body>
+    <h1 class="heading">Hello DOM</h1>
+
+    <img class="avatar" src="" alt="" />
+
+    <a class="profile" rel="stylesheet" href=""></a>
+
+    <ul class="favorite">
+      <li>A</li>
+      <li>Play game</li>
+      <li>Listen music</li>
+      <li>D</li>
+    </ul>
+
+    <div class="clock">Bây giờ là</div>
+
+    <p class="bio">
+      Thầy giáo ba đẹp trai Thầy giáo Ba đẹp trai Thầy giáo ba đẹp trai Thầy
+      giáo Ba đẹp trai Thầy giáo ba đẹp trai Thầy giáo Ba đẹp trai Thầy giáo Ba
+      đẹp trai Thầy giáo ba đẹp trai Thầy giáo ba đẹp trai Thầy giáo ba đẹp trai
+      Thầy giáo ba đẹp trai Thầy giáo ba đẹp trai Thầy giáo Ba đẹp trai Thầy
+      giáo Ba đẹp trai Thầy giáo ba đẹp trai
+    </p>
+
+    <p class="num-of-words"></p>
+
+    <table class="list-students">
+      <tbody>
+        <tr>
+          <td>Giang Hồng Sơn</td>
+        </tr>
+        <tr>
+          <td>Bùi Lan Nhi</td>
+        </tr>
+        <tr>
+          <td>Hoàng Thị Ngọc Linh</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <script>
+      const heading = "Thầy giáo Ba đẹp trai 🤓";
+      const avatar = "https://i.imgur.com/2rP9dFO.png";
+      const profile = "https://twitter.com/banx9x";
+
+      document.title = heading;
+
+      const h1 = document.querySelector("h1");
+      h1.textContent = heading;
+
+      const img = document.querySelector(".avatar");
+      img.src =
+        "data:image/jpeg;base64,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";
+
+      const a = document.querySelector("a");
+      a.href = profile;
+
+      const ul = document.querySelector(".favorite");
+
+      const firstItem = ul.firstElementChild;
+      firstItem.textContent = "Code application";
+
+      const lastItem = ul.lastElementChild;
+      lastItem.textContent = "Sleep";
+
+      const time = document.querySelector("div");
+      const date = new Date();
+      const hours = date.getHours();
+      const minutes = date.getMinutes();
+      const seconds = date.getSeconds();
+      time.textContent = `Bây giờ là ${hours}:${minutes}:${seconds}`;
+
+      const p = document.querySelector(".bio");
+      let text = p.innerText;
+      count = text.toLowerCase().split("ba").length - 1;
+
+      const numOfWord = document.querySelector("p.num-of-words");
+      numOfWord.textContent = `Ở đoạn văn trên có ${count} từ "Ba"`;
+
+      const table = document.querySelector("table");
+      const newRow = table.insertRow(-1);
+
+      let newCell = newRow.insertCell(0);
+      let newText = document.createTextNode("Thầy giáo Ba siêu cấp đẹp trai");
+      newCell.appendChild(newText);
+    </script>
+  </body>
+</html>
