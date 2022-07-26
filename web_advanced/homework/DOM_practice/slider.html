@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        width: 1000px;
+        margin: auto;
+        position: relative;
+        overflow: hidden;
+        /* color: #fff; */
+      }
+
+      .slide-item {
+        position: relative;
+      }
+
+      .stt {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        color: #fff;
+      }
+
+      .btn-direction {
+        padding: 4px 8px;
+      }
+
+      .btn-direction:hover {
+        padding: 4px 8px;
+        background-color: bisque;
+        border-radius: 5px;
+        color: #333;
+        cursor: pointer;
+      }
+
+      .prev {
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        color: #fff;
+        transform: translateY(-50%);
+      }
+
+      .next {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        color: #fff;
+        transform: translateY(-50%);
+      }
+
+      .slide-decr {
+        position: absolute;
+        bottom: 20px;
+        color: #fff;
+        right: 50%;
+        font-size: 20px;
+        transform: translateX(50%);
+      }
+
+      .dots {
+        display: flex;
+        /* position: absolute;
+          bottom: 10px; */
+        justify-content: center;
+      }
+
+      .dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 5px;
+        background-color: #ccc;
+        margin: 4px;
+        cursor: pointer;
+      }
+
+      .active {
+        background-color: rgb(105, 98, 98);
+      }
+
+      .fadeRight {
+        animation: formRight 1s;
+      }
+
+      @keyframes fromRight {
+        from {
+          transform: translateX(100%);
+        }
+        to {
+          transform: translateX(0%);
+        }
+      }
+
+      .fadeLeft {
+        animation: formLeft 1s;
+      }
+
+      @keyframes fromLeft {
+        from {
+          transform: translateX(-100%);
+        }
+        to {
+          transform: translateX(0%);
+        }
+      }
+    </style>
+    <title>Slide Show</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="slide-features"></div>
+
+      <span class="btn-direction prev">Prev</span>
+      <span class="btn-direction next">Next</span>
+
+      <div class="dots">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+
+    <script>
+      const imgs = [
+        {
+          id: 1,
+          src: "https://www.w3schools.com/howto/img_nature_wide.jpg",
+          decr: "Caption Text 1",
+        },
+        {
+          id: 2,
+          src: "https://www.w3schools.com/howto/img_snow_wide.jpg",
+          decr: "Caption Text 2",
+        },
+        {
+          id: 3,
+          src: "https://www.w3schools.com/howto/img_mountains_wide.jpg",
+          decr: "Caption Text 3",
+        },
+      ];
+
+      const slideList = document.querySelector(".slide-features");
+      const slideItem = document.querySelectorAll(".slide-item");
+      const dots = document.querySelectorAll(".dot");
+      const prev = document.querySelector(".prev");
+      const next = document.querySelector(".next");
+
+      let currentIndex;
+      function showSlide(index) {
+        dots.forEach(function (dot) {
+          dot.classList.remove("active");
+        });
+
+        slideList.innerHTML = `<div class="slide-item">
+                <span class="stt">${imgs[index].id}/${imgs.length}</span>
+                <img
+                  src="${imgs[index].src}"  
+                  alt=""
+                />
+                <div class="slide-decr">${imgs[index].decr}</div>
+              </div>`;
+        currentIndex = index;
+      }
+
+      showSlide(0);
+
+      dots.forEach(function (dot, index) {
+        dot.addEventListener("click", function (e) {
+          showSlide(index);
+          dot.classList.add("active");
+        });
+      });
+
+      prev.addEventListener("click", function (e) {
+        slideList.style.animation = "";
+
+        if (currentIndex == 0) {
+          currentIndex = imgs.length - 1;
+        } else {
+          currentIndex--;
+        }
+
+        setTimeout(function () {
+          slideList.style.animation = "fromLeft 1s";
+        });
+        showSlide(currentIndex);
+        dots[currentIndex].classList.add("active");
+      });
+
+      next.addEventListener("click", function (e) {
+        slideList.style.animation = "";
+        if (currentIndex == imgs.length - 1) {
+          currentIndex = 0;
+        } else {
+          currentIndex++;
+        }
+        setTimeout(function () {
+          slideList.style.animation = "fromRight 1s";
+        });
+        showSlide(currentIndex);
+        dots[currentIndex].classList.add("active");
+      });
+    </script>
+  </body>
+</html>
